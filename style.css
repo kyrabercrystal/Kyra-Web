@@ -1,0 +1,23 @@
+:root {
+	--red: #AA224B;
+	--black: #040404;
+	--latte: #FFF8E7;
+
+	--text-color: var(--latte);
+	--text-fonts: 'OpenDyslexic', 'Atkinson Hyperlegible', Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: var(--black);
+	}
+}
+
+/* Light mode and defaults */
+
+html {
+	background-color: var(--red);
+	color: var(--text-color);
+}
