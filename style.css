@@ -7,17 +7,23 @@
 	--text-fonts: 'OpenDyslexic', 'Atkinson Hyperlegible', Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }
 
-/* Dark mode */
-
-@media (prefers-color-scheme: dark) {
-	html {
-		background-color: var(--black);
-	}
+html {
+	background-color: var(--black);
+	color: var(--text-color);
+	font: 1em var(--text-fonts);
 }
 
-/* Light mode and defaults */
-
-html {
-	background-color: var(--red);
+a[href] {
 	color: var(--text-color);
+}
+
+/* utilities */
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#top-bar>:first-child {
+	padding-right: 3em;
 }
