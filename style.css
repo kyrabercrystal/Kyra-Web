@@ -17,13 +17,37 @@ a[href] {
 	color: var(--text-color);
 }
 
-/* utilities */
-.center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+/* Navigation Bar */
 
-#top-bar>:first-child {
-	padding-right: 3em;
+/* Add a black background color to the top navigation */
+
+.topnav {
+	/*background-color: #333;*/
+	border-bottom: 2px solid #333;
+	overflow: hidden;
+}
+  
+/* Style the links inside the navigation bar */
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+
+.topnav a:hover {
+	background-color: #1F1F1F;
+	color: #E7E7E7;
+}
+  
+/* Add a color to the active/current link */
+
+.topnav a.active {
+	border-bottom: 2px solid #FFFFFF;
 }
